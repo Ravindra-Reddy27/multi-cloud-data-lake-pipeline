@@ -112,7 +112,7 @@ docker-compose run --rm app bash scripts/sync_to_s3.sh
 
 With the data staged in S3, execute the SQL DDL files against your Redshift cluster via the **AWS Query Editor v2**:
 
-1. Run `sql/create_external_table.sql` to map Redshift to the AWS Glue Data Catalog and register the S3 partitions.
+1. Edit with your values and Run `sql/create_external_table.sql` to map Redshift to the AWS Glue Data Catalog and register the S3 partitions.
 2. Run `sql/create_funnel_view.sql` to build the late-binding analytics view.
 3. Query the view to generate the final business report:
 
