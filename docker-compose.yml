@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: multicloud_pipeline
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    # Keeps the container alive so we can run one-off commands
+    command: tail -f /dev/null

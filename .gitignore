@@ -1,0 +1,38 @@
+# ========================
+# 1. Credentials & Secrets
+# ========================
+.env
+*.pem
+/Credentails
+*service-account*.json
+
+# ========================
+# 2. Data & Output
+# ========================
+output/
+*.parquet
+*.json
+!great_expectations/expectations/*.json 
+
+# ========================
+# 3. Python & Environment
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.pytest_cache/
+
+# ========================
+# 4. Great Expectations
+# ========================
+great_expectations/uncommitted/
+
+# ========================
+# 5. OS & IDE Files
+# ========================
+.DS_Store
+.vscode/
+.idea/
+*.swp
